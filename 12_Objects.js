@@ -30,7 +30,7 @@ Obj1.Fun2=function(){
 console.log(Obj1.Fun())
 console.log(Obj1.Fun2())
 
-Object.freeze(Obj1)  //* this is used to freeze the Object so changed can bee done// Define an object named Obj1
+Object.freeze(Obj1)  //* this is used to freeze the Object so changed cannot  bee done// Define an object named Obj1
 
 
 // Add a property called Name to Obj1 and set its value to "Cource
