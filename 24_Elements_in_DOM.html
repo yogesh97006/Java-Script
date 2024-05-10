@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Elements</title>
+</head>
+<body>
+    <h1> learning DOM Elements</h1>
+    <div class="parent">
+      <p class="DayName">MonDay</p>
+      <p class="DayName">TuesDay</p>
+      <p class="DayName">WensDay</p>
+      <p class="DayName">ThursDay</p>
+
+      
+      <p class="DayName">FriDay</p>
+      <p class="DayName">SatDay</p>
+      <p class="DayName">SunDay</p>
+    </div>
+</body>
+<script>
+  let parent=document.querySelector('.parent')
+  parent.style.color='white'
+  parent.style.backgroundColor='black'
+
+  console.log(parent.firstElementChild.innerText);
+  console.log(parent.lastElementChild.innerText);
+
+//   console.log(parent.children[0].innerText)
+parent.children[0].innerText='MD'
+// console.log(parent.children[0].nextElementSibling.innerText)
+
+let child=document.querySelector('.DayName')
+console.log(child.innerText);
+
+console.log(child.parentElement)
+
+console.log(child.nextElementSibling.innerText);
+
+console.log(parent.childNodes);
+
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cources">
+        <ul class="items">
+            <li>JavaScript</li>
+        </ul>
+    </div>
+</body>
+<script>
+    
+    function ListItem(items){
+        let li=document.createElement('li')
+        li.innerHTML=`${items}`
+        document.querySelector('.items').appendChild(li)
+  }
+    
+     ListItem('Python')
+     ListItem('Java')
+
+    function ListItemsAll(All){
+        let li=document.createElement('li')
+        li.appendChild(document.createTextNode(All))
+        document.querySelector('.items').appendChild(li)
+    } 
+
+    ListItemsAll('Rust')
+    
+</script>
+</html>

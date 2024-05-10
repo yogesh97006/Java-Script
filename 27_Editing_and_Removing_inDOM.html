@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="unordered_list">
+        <li class="list_items">C</li>
+        <li class="list_items">JS</li>
+        <li class="list_items">C++</li>
+    </ul>
+</body>
+<script>
+    // this is also for edit
+    let thredChild=document.querySelector('.list_items:nth-child(2)')
+    // console.log(thredChild)
+    // thredChild.innerHTML="JavaScript"
+    let NewLi=document.createElement('li')
+    NewLi.textContent="JavaScript"
+    thredChild.replaceWith(NewLi)  
+    // thredChild.replaceChild(NewLi)  
+ 
+    // this one is for edit 
+    let firstChild=document.querySelector('.list_items:first-child')
+    //  console.log(firstChild);
+    firstChild.outerHTML='<li>Python</li>'
+
+
+    // this for to remove 
+    let lastChild=document.querySelector('.list_items:last-child')
+    console.log(lastChild);
+     lastChild.remove()
+
+
+</script>
+</html>

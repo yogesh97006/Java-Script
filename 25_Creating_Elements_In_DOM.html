@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Elements In DOM</title>
+   <style>
+    body{
+        margin: 0;
+    }
+    div{
+        padding: 50px 25px;
+        text-align: center;
+        border-radius: 5px;
+    }
+   </style>
+</head>
+<body>
+
+
+    
+</body>
+<script>
+    const div=document.createElement('div')
+    div.setAttribute("class",'textValues')
+    div.setAttribute("id",'DOM')
+
+    // div.className="Text"      
+    // the above line of code will remove the previous class and put the above one
+
+
+    div.style.backgroundColor="black"
+    div.style.color="white"
+    
+    const data=document.createTextNode("This is Writen in Dom Methord")
+
+    // div.innerHTML="Its Fine We can see "
+    // this will 
+    
+    div.appendChild(data)
+
+    document.body.appendChild(div)
+
+
+    console.log(div)
+</script>
+</html>
